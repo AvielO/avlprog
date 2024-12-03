@@ -17,4 +17,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: <div>The Page does not found!</div>,
+  },
 ]);
