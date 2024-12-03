@@ -9,7 +9,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <div>App Container</div>,
+        element: <div className="text-32xl">App Container</div>,
       },
       {
         path: "/signup",
