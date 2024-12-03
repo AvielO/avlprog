@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import App from "../App";
+import SignupPage from "../Pages/SignupPage/SignupPage";
 
 export const router = createBrowserRouter([
   {
@@ -8,7 +9,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <div>Checking</div>,
+        element: <div>App Container</div>,
+      },
+      {
+        path: "/signup",
+        element: <SignupPage />,
       },
     ],
   },
