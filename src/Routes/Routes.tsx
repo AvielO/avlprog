@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import App from "../App";
 import SignupPage from "../Pages/SignupPage/SignupPage";
+import NotFoundPage from "../Pages/NotFoundPage/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>The Page does not found!</div>,
+    element: <NotFoundPage />,
   },
 ]);
