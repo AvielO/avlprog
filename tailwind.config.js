@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "signup-bg": "url('assets/backgrounds/signup-screen.jpg')",
+      },
+    },
   },
   plugins: [],
 };
