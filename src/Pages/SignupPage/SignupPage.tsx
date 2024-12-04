@@ -6,7 +6,7 @@ const SignupPage = () => {
       <div className="flex flex-col w-full xl:w-1/2 bg-signup-bg bg-cover bg-center pb-6 px-8 text-white items-center justify-center gap-4">
         <div className="flex">
           <img
-            src="/public/assets/logo/logo-white.png"
+            src="/assets/logo/logo-white.png"
             className="w-40 h-auto m-6 xl:w-64 2xl:w-72 transition-all"
             alt="AvlHealth Logo"
           />
@@ -15,7 +15,7 @@ const SignupPage = () => {
         <div className="flex justify-center">
           <div className="flex flex-col items-center gap-4 xl:gap-12">
             <img
-              src="/public/assets/items/signup-picture.png"
+              src="/assets/items/signup-picture.png"
               className="w-80 h-auto xl:w-[20rem] 2xl:w-[21rem]"
               alt="signup-picture"
             />
