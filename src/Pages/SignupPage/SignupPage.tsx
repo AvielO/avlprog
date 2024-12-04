@@ -1,26 +1,26 @@
 const SignupPage = () => {
   return (
-    <div className="flex h-full w-full">
-      <div className="flex flex-col w-1/2 bg-signup-bg bg-cover bg-center p-8 text-white flex-1 justify-center items-center">
-        <div className="h-1/4">
+    <div className="flex flex-col xl:flex-row xl:h-full w-full">
+      <div className="flex flex-col w-full xl:w-1/2 bg-signup-bg bg-cover bg-center pb-6 px-8 text-white">
+        <div className="h-1/3 flex justify-center items-center">
           <img
             src="/public/assets/logo/logo-white.png"
-            className="absolute w-64 h-auto top-0 left-0 m-12"
+            className="w-40 h-auto m-6 xl:w-64 transition-all"
             alt="AvlHealth Logo"
           />
         </div>
-        <div className="h-3/4">
-          <div className="flex flex-col items-center justify-center">
+        <div className="flex h-2/3">
+          <div className="flex flex-col items-center gap-4 xl:gap-12">
             <img
               src="/public/assets/items/signup-picture.png"
-              className="h-[32rem] w-auto"
+              className="w-80 h-auto xl:w-[24rem]"
               alt="signup-picture"
             />
             <div className="flex flex-col gap-4 text-center justify-center">
-              <h1 className="text-5xl font-semibold text-center">
+              <h1 className="text-3xl md:text-4xl xl:text-5xl transition-all font-semibold text-center">
                 Go beyond, and even more
               </h1>
-              <p className="text-xl text-center">
+              <p className="text-md md:text-lg xl:text-xl transition-all text-center text-gray-300">
                 AvlHealth is your ultimate companion for achieving your weight
                 goals and leading a healthier lifestyle.
                 <br /> With our app, you can set personalized weight targets,
