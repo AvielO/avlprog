@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "signup-bg": "url('assets/backgrounds/signup-screen.jpg')",
+        "signup-bg": "url('/assets/backgrounds/signup-screen.jpg')",
       },
     },
   },
