@@ -3,7 +3,7 @@ import React from "react";
 interface CustomInputProps {
   type: string;
   name: string;
-  placeHolder: string;
+  placeHolder?: string;
   minLength?: number;
   maxLength?: number;
   value?: string;
