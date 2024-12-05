@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import CustomInput from "../../Components/CustomInput";
+import CustomInput from "../../Components/CustomInput/CustomInput";
+import Logo from "../../Components/Logo/Logo";
 
 const SigninPage = () => {
   return (
@@ -60,19 +61,13 @@ const SigninPage = () => {
       </div>
 
       <div className="flex flex-col w-full min-h-full xl:w-1/2 bg-signup-bg bg-cover bg-center py-6 px-8 text-white items-center justify-center gap-4">
-        <div className="flex">
-          <img
-            src="/assets/logo/logo-white.png"
-            className="w-40 h-auto m-6 xl:w-64 2xl:w-72 transition-all"
-            alt="AvlHealth Logo"
-          />
-        </div>
+        <Logo />
 
         <div className="flex justify-center">
           <div className="flex flex-col items-center gap-4 xl:gap-12">
             <img
-              src="/assets/items/signup-picture.png"
-              className="w-80 h-auto xl:w-[20rem] 2xl:w-[21rem]"
+              src="/assets/items/signin-picture.png"
+              className="w-80 h-auto xl:w-[20rem] 2xl:w-[24rem]"
               alt="signup-picture"
             />
           </div>
