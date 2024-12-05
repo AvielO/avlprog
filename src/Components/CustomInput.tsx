@@ -8,6 +8,7 @@ interface CustomInputProps {
   maxLength?: number;
   value?: string;
   required?: boolean;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const CustomInput: React.FC<CustomInputProps> = ({
@@ -18,6 +19,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
   maxLength,
   required = false,
   value,
+  onChange,
 }) => {
   return (
     <input
@@ -29,6 +31,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
       placeholder={placeHolder}
       required={required}
       value={value}
+      onChange={onChange}
     />
   );
 };
