@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import CustomInput from "../../Components/customInput";
+import CustomInput from "../../Components/CustomInput";
 
 const SignupPage = () => {
   return (
-    <div className="flex flex-col min-h-screen w-full xl:flex-row">
+    <div className="flex flex-col min-h-screen xl:flex-row">
       <div className="flex flex-col w-full xl:w-1/2 bg-signup-bg bg-cover bg-center pb-6 px-8 text-white items-center justify-center gap-4">
         <div className="flex">
           <img

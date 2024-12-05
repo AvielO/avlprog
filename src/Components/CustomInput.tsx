@@ -15,9 +15,9 @@ const CustomInput: React.FC<CustomInputProps> = ({
   type = "text",
   name = "name",
   placeHolder = "Last Name",
+  required = false,
   minLength,
   maxLength,
-  required = false,
   value,
   onChange,
 }) => {
