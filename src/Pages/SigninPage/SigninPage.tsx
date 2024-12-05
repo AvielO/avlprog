@@ -59,7 +59,7 @@ const SigninPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col w-full xl:w-1/2 bg-signup-bg bg-cover bg-center pb-6 px-8 text-white items-center justify-center gap-4">
+      <div className="flex flex-col w-full min-h-full xl:w-1/2 bg-signup-bg bg-cover bg-center py-6 px-8 text-white items-center justify-center gap-4">
         <div className="flex">
           <img
             src="/assets/logo/logo-white.png"
