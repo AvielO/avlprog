@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import CustomInput from "../../Components/customInput";
 
 const SignupPage = () => {
   return (
@@ -47,51 +48,47 @@ const SignupPage = () => {
         <div>
           <form className="flex flex-col gap-4 items-center justify-center w-full">
             <div className="flex gap-4 flex-wrap justify-center w-full">
-              <input
-                className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+              <CustomInput
                 type="text"
                 name="firstName"
+                placeHolder="First Name"
                 minLength={2}
-                maxLength={12}
-                placeholder="First Name"
-                required
+                maxLength={16}
+                required={true}
               />
 
-              <input
-                className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+              <CustomInput
                 type="text"
                 name="lastName"
+                placeHolder="Last Name"
                 minLength={2}
-                maxLength={12}
-                placeholder="Last Name"
-                required
+                maxLength={16}
+                required={true}
               />
             </div>
-
-            <input
-              className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+            <CustomInput
               type="text"
               name="username"
+              placeHolder="Username"
               minLength={4}
               maxLength={12}
-              placeholder="Username"
-              required
+              required={true}
             />
 
-            <input
-              className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+            <CustomInput
               type="email"
               name="email"
-              placeholder="Email"
-              required
+              placeHolder="Email"
+              required={true}
             />
 
-            <input
-              className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+            <CustomInput
               type="password"
               name="password"
-              placeholder="Password"
-              required
+              placeHolder="Password"
+              minLength={4}
+              maxLength={16}
+              required={true}
             />
 
             <label className="text-center text-gray-600 font-semibold">
