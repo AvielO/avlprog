@@ -1,16 +1,12 @@
 import { Link } from "react-router-dom";
+import CustomInput from "../../Components/CustomInput/CustomInput";
+import Logo from "../../Components/Logo/Logo";
 
 const SignupPage = () => {
   return (
-    <div className="flex flex-col min-h-screen w-full xl:flex-row">
+    <div className="flex flex-col min-h-screen xl:flex-row">
       <div className="flex flex-col w-full xl:w-1/2 bg-signup-bg bg-cover bg-center pb-6 px-8 text-white items-center justify-center gap-4">
-        <div className="flex">
-          <img
-            src="/assets/logo/logo-white.png"
-            className="w-40 h-auto m-6 xl:w-64 2xl:w-72 transition-all"
-            alt="AvlHealth Logo"
-          />
-        </div>
+        <Logo />
 
         <div className="flex justify-center">
           <div className="flex flex-col items-center gap-4 xl:gap-12">
@@ -47,51 +43,47 @@ const SignupPage = () => {
         <div>
           <form className="flex flex-col gap-4 items-center justify-center w-full">
             <div className="flex gap-4 flex-wrap justify-center w-full">
-              <input
-                className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+              <CustomInput
                 type="text"
                 name="firstName"
+                placeHolder="First Name"
                 minLength={2}
-                maxLength={12}
-                placeholder="First Name"
-                required
+                maxLength={16}
+                required={true}
               />
 
-              <input
-                className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+              <CustomInput
                 type="text"
                 name="lastName"
+                placeHolder="Last Name"
                 minLength={2}
-                maxLength={12}
-                placeholder="Last Name"
-                required
+                maxLength={16}
+                required={true}
               />
             </div>
-
-            <input
-              className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+            <CustomInput
               type="text"
               name="username"
+              placeHolder="Username"
               minLength={4}
               maxLength={12}
-              placeholder="Username"
-              required
+              required={true}
             />
 
-            <input
-              className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+            <CustomInput
               type="email"
               name="email"
-              placeholder="Email"
-              required
+              placeHolder="Email"
+              required={true}
             />
 
-            <input
-              className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+            <CustomInput
               type="password"
               name="password"
-              placeholder="Password"
-              required
+              placeHolder="Password"
+              minLength={4}
+              maxLength={16}
+              required={true}
             />
 
             <label className="text-center text-gray-600 font-semibold">
