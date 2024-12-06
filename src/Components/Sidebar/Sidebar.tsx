@@ -1,17 +1,20 @@
-import { useState } from "react";
-import { BsArrowLeftShort } from "react-icons/bs";
-import { RiDashboardFill } from "react-icons/ri";
+import {
+  RiDashboardFill,
+  RiPagesFill,
+  RiPictureInPictureFill,
+} from "react-icons/ri";
+import SidebarItem from "../SidebarItem/SidebarItem";
 
 const Sidebar = () => {
-  const [open, setOpen] = useState(true);
-  const menus = [
+  const menu = [
     {
       title: "Dashboard",
-      icon: <RiDashboardFill />,
+      icon: RiDashboardFill,
     },
-    { title: "Pages" },
+    { title: "Pages", icon: RiPagesFill },
     {
       title: "Media",
+      icon: RiPictureInPictureFill,
     },
   ];
 
@@ -22,7 +25,7 @@ const Sidebar = () => {
       <div className="inline-flex cursor-pointer">
         <img
           src="/assets/logo/textless-logo.png"
-          className={`w-16 mr-2 duration-300 ${open && "rotate-[360deg]"}`}
+          className={`w-16 mr-2 duration-300 md:rotate-[360deg]`}
           alt="AvlHealth Logo"
         />
         <h1
@@ -33,16 +36,8 @@ const Sidebar = () => {
       </div>
 
       <ul className="pt-2 flex flex-col justify-center">
-        {menus.map((menu, index) => (
-          <li
-            key={index}
-            className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 duration-300 hover:bg-blue-200 rounded-md my-1"
-          >
-            <span className="text-2xl block float-left">{menu.icon}</span>
-            <span className={`text-base font-medium hidden md:block`}>
-              {menu.title}
-            </span>
-          </li>
+        {menu.map((item, index) => (
+          <SidebarItem key={index} title={item.title} Icon={item.icon} />
         ))}
       </ul>
     </div>
