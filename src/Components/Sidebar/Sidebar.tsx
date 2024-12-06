@@ -1,23 +1,7 @@
-import {
-  RiDashboardFill,
-  RiPagesFill,
-  RiPictureInPictureFill,
-} from "react-icons/ri";
 import SidebarItem from "../SidebarItem/SidebarItem";
+import { sidebarData } from "./sidebarData";
 
 const Sidebar = () => {
-  const menu = [
-    {
-      title: "Dashboard",
-      icon: RiDashboardFill,
-    },
-    { title: "Pages", icon: RiPagesFill },
-    {
-      title: "Media",
-      icon: RiPictureInPictureFill,
-    },
-  ];
-
   return (
     <div
       className={`bg-blue-300 h-screen p-5 pt-8 w-28 md:w-60 duration-300 relative`}
@@ -36,7 +20,7 @@ const Sidebar = () => {
       </div>
 
       <ul className="pt-2 flex flex-col justify-center">
-        {menu.map((item, index) => (
+        {sidebarData.map((item, index) => (
           <SidebarItem key={index} title={item.title} Icon={item.icon} />
         ))}
       </ul>
