@@ -3,11 +3,12 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 
 const App = () => {
   return (
-    <>
+    <div className="flex">
       <Sidebar />
-      <Outlet />
-      {/* Footer */}
-    </>
+      <div className="p-7">
+        <Outlet />
+      </div>
+    </div>
   );
 };
 
