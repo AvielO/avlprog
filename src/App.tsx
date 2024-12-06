@@ -1,9 +1,10 @@
 import { Outlet } from "react-router";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 const App = () => {
   return (
     <>
-      {/* Navbar */}
+      <Sidebar />
       <Outlet />
       {/* Footer */}
     </>
