@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SidebarItem from "../SidebarItem/SidebarItem";
 import { sidebarData } from "./sidebarData";
 
@@ -21,7 +22,9 @@ const Sidebar = () => {
 
       <ul className="pt-2 flex flex-col justify-center">
         {sidebarData.map((item, index) => (
-          <SidebarItem key={index} title={item.title} Icon={item.icon} />
+          <Link to={item.title} key={index}>
+            <SidebarItem title={item.title} Icon={item.icon} />
+          </Link>
         ))}
       </ul>
     </div>
