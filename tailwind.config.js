@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "signup-bg": "url('assets/backgrounds/signup-screen.jpg')",
+        "light-white": "rgba(255,255,255,0.18)",
       },
     },
   },
