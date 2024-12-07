@@ -4,7 +4,11 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 const App = () => {
   return (
     <div className="flex">
-      <Sidebar />
+      <Sidebar
+        firstName="Aviel"
+        lastName="Ovadiya"
+        mail="AvielMail@gmail.com"
+      />
       <div className="p-7">
         <Outlet />
       </div>

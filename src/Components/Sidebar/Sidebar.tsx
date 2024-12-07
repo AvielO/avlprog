@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import SidebarItem from "../SidebarItem/SidebarItem";
 import { sidebarData } from "./sidebarData";
 
-const Sidebar = () => {
+interface SidebarProps {
+  firstName: string;
+  lastName: string;
+  mail: string;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ firstName, lastName, mail }) => {
   return (
     <div
       className={`bg-blue-300 h-screen p-5 pt-8 w-28 md:w-60 duration-300 relative flex flex-col`}
@@ -35,8 +41,10 @@ const Sidebar = () => {
           alt="User Picture"
         />
         <div className="text-white hidden md:inline-block scale-0 duration-300 origin-left md:scale-100">
-          <h3 className="text-lg">Israel Israeli</h3>
-          <h6 className="text-sm">fakeMail@gmail.com</h6>
+          <h3 className="text-lg">
+            {firstName} {lastName}
+          </h3>
+          <h6 className="text-sm">{mail}</h6>
         </div>
       </div>
     </div>
