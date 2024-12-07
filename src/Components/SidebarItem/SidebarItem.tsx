@@ -7,9 +7,11 @@ interface SidebarItemProps {
 
 const SidebarItem: React.FC<SidebarItemProps> = ({ title, Icon }) => {
   return (
-    <li className="flex text-white gap-x-4 cursor-pointer p-2 duration-300 hover:bg-blue-200 rounded-md my-1">
-      <Icon className="text-2xl" />
-      <span className={`text-base font-medium hidden md:block`}>{title}</span>
+    <li className="flex text-white gap-x-4 cursor-pointer p-2 hover:bg-blue-200 justify-center items-center md:justify-normal rounded-md my-1">
+      <Icon className="text-3xl" />
+      <span className={`text-base font-medium hidden duration-300 md:block`}>
+        {title}
+      </span>
     </li>
   );
 };
