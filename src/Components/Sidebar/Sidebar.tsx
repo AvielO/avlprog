@@ -27,8 +27,8 @@ const Sidebar: React.FC<SidebarProps> = ({ firstName, lastName, mail }) => {
       </div>
 
       <ul className="pt-2 flex flex-col justify-center">
-        {sidebarData.map((item, index) => (
-          <Link to={item.title} key={index}>
+        {sidebarData.map((item) => (
+          <Link to={item.title} key={item.title}>
             <SidebarItem title={item.title} Icon={item.icon} />
           </Link>
         ))}
