@@ -8,6 +8,7 @@ interface CustomInputProps {
   maxLength?: number;
   value?: string;
   required?: boolean;
+  classNames?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -19,11 +20,12 @@ const CustomInput: React.FC<CustomInputProps> = ({
   minLength,
   maxLength,
   value,
+  classNames,
   onChange,
 }) => {
   return (
     <input
-      className="h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all"
+      className={`h-10 rounded-lg border-2 border-gray-300 outline-none focus:border-blue-500 focus:ring focus:ring-blue-300 shadow-lg p-5 text-lg transition-all ${classNames}`}
       type={type}
       name={name}
       minLength={minLength}

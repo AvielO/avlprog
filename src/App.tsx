@@ -9,7 +9,7 @@ const App = () => {
         lastName="Ovadiya"
         mail="AvielMail@gmail.com"
       />
-      <div className="p-7">
+      <div className="p-7 flex-grow">
         <Outlet />
       </div>
     </div>
